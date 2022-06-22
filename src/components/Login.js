@@ -72,9 +72,10 @@ const Login = () => {
 
                                         <Row className='justify-content-between'>
                                             <Col>
-                                                <Form.Group id="remember">
-                                                    <Form.Check type="checkbox" label="Remember me" for="remember" className='text-remember' />
-                                                </Form.Group>
+                                            <div class="form-check">
+                                                <input type="checkbox" className="form-check-input" id="remember" />
+                                                <label className="form-check-label text-remember" for="remember">Remember me</label>
+                                            </div>
                                             </Col>
                                             <Col>
                                                 <p class="text-forgot small text-end mb-0"><a href="#forgot" className='text-decoration-none'>Forgot password?</a></p>

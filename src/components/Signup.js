@@ -62,33 +62,31 @@ const Signup = () => {
                                         </div>
 
                                         <div class="mb-3">
-                                            <Form.Label class="text-email form-label" for="email">Email address</Form.Label>
+                                            <Form.Label className="text-name form-label" for="name">Full name</Form.Label>
+                                            <Form.Control type="text" id="name" className="input-name form-control form-control-lg" placeholder="Enter your full name" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <Form.Label className="text-email form-label" for="email">Email address</Form.Label>
                                             <Form.Control type="email" id="email" className="input-email form-control form-control-lg" placeholder="Enter your email" />
                                         </div>
                                         <div class="mb-3">
-                                            <Form.Label class="text-password form-label" for="password">Password</Form.Label>
+                                            <Form.Label className="text-password form-label" for="password">Password</Form.Label>
                                             <Form.Control type="password" id="password" className="input-password form-control form-control-lg" placeholder="Enter your password" />
                                         </div>
 
-                                        <Row className='justify-content-between'>
-                                            <Col>
-                                                <Form.Group id="remember">
-                                                    <Form.Check type="checkbox" label="Remember me" for="remember" className='text-remember' />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <p class="text-forgot small text-end mb-0"><a href="#forgot" className='text-decoration-none'>Forgot password?</a></p>
-                                            </Col>
-                                        </Row>
+                                        <div class="form-check">
+                                            <input type="checkbox" className="form-check-input" id="agree" />
+                                            <label className="form-check-label text-remember" for="agree">I agree to the <a href='#terms' className='text-decoration-none'>terms and condition</a></label>
+                                        </div>
 
                                         <div className="d-grid gap-2 mb-3">
-                                            <Button href="#login" variant="link" size="lg" className='btn-login-block text-white text-decoration-none'>
-                                                Login
+                                            <Button href="#sign-up" variant="link" size="lg" className='btn-login-block text-white text-decoration-none'>
+                                                Sign Up
                                             </Button>
                                         </div>
 
                                         <div class="text-center">
-                                            <p className='text-no-account text-dark mb-0'>No account? <a href="#sign-up">Sign Up</a></p>
+                                            <p className='text-no-account text-dark mb-0'>Have an account? <a href="#login">Login</a></p>
                                         </div>
                                     </div>
                                 </Card.Body>
@@ -97,6 +95,17 @@ const Signup = () => {
                     </Row>
                 </Container>
             </main>
+
+            <footer>
+                <Container>
+                    <p className='footer-brand text-center mb-4'>&copy; PakanBumi 2022</p>
+                    <div class="footer-link d-flex flex-row mb-3 justify-content-center gap-4">
+                        <p><a href='#cookie' className='text-decoration-none'>Cookie Policy</a></p>
+                        <p><a href='#terms' className='text-decoration-none'>Terms Of Use</a></p>
+                        <p><a href='#privacy' className='text-decoration-none'>Privacy Policy</a></p>
+                    </div>
+                </Container>
+            </footer>
         </>
     )
 }
