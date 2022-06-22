@@ -52,14 +52,14 @@ const Login = () => {
                             <Card className='form-login text-white'>
                                 <Card.Body className='form-body'>
                                     <div>
-                                        <Row className='mb-5'>
-                                            <Col className='col-8'>
+                                        <div className='d-flex justify-content-between mb-5'>
+                                            <Col className='col-9'>
                                                 <h2 className='text-title'>Selamat Datang!</h2>
                                             </Col>
-                                            <Col className='text-end'>
+                                            <Col className='text-end col-3'>
                                                 <img src="../assets/Logo_Pakan_Bumi.png" alt="Logo Pakan Bumi" />
                                             </Col>
-                                        </Row>
+                                        </div>
 
                                         <div class="mb-3">
                                             <Form.Label class="text-email form-label" for="email">Email address</Form.Label>
