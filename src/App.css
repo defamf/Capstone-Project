@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-black: #111111;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-bg {
+  background-color: var(--primary-black);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+  padding: 3px 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-login {
+  border-radius: 60px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-body {
+  padding: 47px 58px 25px;
+}
+
+.btn-login {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5F5F5F;
+}
+
+.btn-login:hover {
+  color: #5F5F5F;
+}
+
+.btn-signup {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 15px;
+  color: var(--primary-black);
+}
+
+.btn-signup:hover {
+  color: var(--primary-black);
+}
+
+.text-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--primary-black);
+  letter-spacing: -0.05em;
+}
+
+.text-email, .text-password, .input-email, .input-password, .text-remember, .text-no-account {
+  font-size: 13px;
+  color: var(--primary-black);
+}
+
+.input-email, .input-password {
+  padding: 14px 23px;
+  border-radius: 10px;
+}
+
+.text-forgot {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #1F83F9;
+}
+
+.btn-login-block {
+  margin-top: 87px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: var(--primary-black);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.text-no-account {
+  font-weight: 500;
+  color: var(--primary-black);
+}
+
+.text-no-account > a {
+  font-weight: 600;
+  color: var(--primary-black);
+}
+
+.footer-brand, .footer-link > p > a {
+  font-size: 16px;
+  color: #375679;
 }
