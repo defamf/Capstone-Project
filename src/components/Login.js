@@ -33,12 +33,12 @@ const Login = () => {
                             className="justify-content-end my-3 my-lg-0"
                         >
                             <Form className="d-flex">
-                            <Nav.Link href="#login" className="btn-login me-2">
-                                Login
-                            </Nav.Link>
-                            <Button href='#sign-up' variant="link" className="btn-signup bg-white text-decoration-none">
-                                Sign Up
-                            </Button>
+                                <Nav.Link href="#login" className="btn-white-link me-2">
+                                    Login
+                                </Nav.Link>
+                                <Button href='#sign-up' variant="link" className="btn-white bg-white text-decoration-none">
+                                    Sign Up
+                                </Button>
                             </Form>
                         </Navbar.Collapse>
                     </Container>

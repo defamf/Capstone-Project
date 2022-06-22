@@ -26,24 +26,24 @@ body {
   padding: 47px 58px 25px;
 }
 
-.btn-login {
+.btn-white-link {
   font-size: 13px;
   font-weight: 600;
   color: #5F5F5F;
 }
 
-.btn-login:hover {
+.btn-white-link:hover {
   color: #5F5F5F;
 }
 
-.btn-signup {
+.btn-white {
   font-size: 13px;
   font-weight: 600;
   padding: 7px 15px;
   color: var(--primary-black);
 }
 
-.btn-signup:hover {
+.btn-white:hover {
   color: var(--primary-black);
 }
 
