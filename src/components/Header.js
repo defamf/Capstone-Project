@@ -7,6 +7,7 @@ import {
     Form,
     Button
 } from "react-bootstrap";
+import HomeMain from './HomeMain';
 
 function Header() {
     return (
@@ -14,7 +15,7 @@ function Header() {
             <header>
                 <Navbar expand="lg">
                     <Container className='header-border-bottom mt-3 mb-4 pb-2 px-lg-0'>
-                        <Navbar.Brand href="#home" className=''>
+                        <Navbar.Brand href="#home">
                             <img
                                 src="../assets/Logo_Pakan_Bumi.png"
                                 width=""
@@ -26,7 +27,7 @@ function Header() {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                             <Nav className="text-navbar justify-content-end">
-                                <Nav.Link href="#home" className='nav-item'>Home</Nav.Link>
+                                <Nav.Link href="#home" className='nav-item nav-active'>Home</Nav.Link>
                                 <Nav.Link href="#link" className='nav-item'>Tukar Poin</Nav.Link>
                                 <Nav.Link href="#link" className='nav-item'>Artikel</Nav.Link>
                                 <Nav.Link href="#link" className='nav-item'>Tentang Kami</Nav.Link>
@@ -39,6 +40,8 @@ function Header() {
                     </Container>
                 </Navbar>
             </header>
+
+            <HomeMain />
         </>
     )
 }

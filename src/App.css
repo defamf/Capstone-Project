@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f8f8f8;
+  background-color: #f3f3f3;
 }
 
 .navbar-bg {
@@ -111,10 +111,18 @@ body {
   color: rgba(17, 17, 17, 0.75);
 }
 
-.text-navbar > a:hover {
-  margin-top: -3px;
+.text-navbar > a:hover::after {
+  content: '';
+  display: block;
+  color: var(--primary-black)!important;
   border-bottom: 3px solid var(--primary-black);
+  width: 50%;
   transition: all ease-in-out .2s;
+  margin-bottom: -3px;
+}
+
+.nav-active {
+  color: var(--primary-black)!important;
 }
 
 .header-border-bottom {
@@ -131,4 +139,14 @@ body {
 .btn-login-header:hover {
   background-color: #33bd0d;
   border: 1px solid #33bd0d;
+}
+
+.title-home {
+  font-size: 48px;
+  line-height: 72px;
+  color: #000;
+}
+
+.subtitle-home {
+  color: #767676;
 }
