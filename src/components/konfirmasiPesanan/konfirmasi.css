@@ -1,0 +1,20 @@
+.btnBackHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 240px;
+  height: 50px;
+  border: thin solid rgb(255, 255, 255);
+
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+
+  color: white;
+  background: #56e53f;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
